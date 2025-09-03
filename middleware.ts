@@ -4,7 +4,7 @@ import type { NextRequest } from "next/server";
 export function middleware(req: NextRequest) {
     const auth = req.headers.get("authorization");
     const user = process.env.SITE_USER ?? "friends";
-    const pass = process.env.SITE_PASSWORD ?? "hike123";
+    const pass = process.env.SITE_PASSWORD ?? "#Np0w3r";
 
     // If no Authorization header or not Basic, prompt
     if (!auth || !auth.startsWith("Basic ")) {
